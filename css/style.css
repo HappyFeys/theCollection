@@ -12,6 +12,7 @@ body {
   background-image: url("/assets/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   background-color: #0c0b0e;
@@ -21,6 +22,24 @@ header {
   margin: 50px 20px;
   width: 40%;
   height: 25vh;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+header h1 {
+  color: crimson;
+  font-size: 50px;
+}
+@media only screen and (max-width: 768px) {
+  header h1 {
+    margin: auto;
+  }
 }
 header #description {
   width: 100%;
@@ -46,6 +65,12 @@ main .card {
   border-radius: 20px;
   overflow: hidden;
   margin: 50px;
+  color: #333;
+  font-weight: 600;
+}
+main .card .titre {
+  font-weight: 900;
+  color: #f0f0f0;
 }
 main .card .personnage {
   width: 100%;
@@ -67,6 +92,8 @@ main .card .stat .info {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  border-bottom: 1px solid #333;
+  padding: 5px;
 }
 main .card .stat .info .divInfo {
   width: 33%;

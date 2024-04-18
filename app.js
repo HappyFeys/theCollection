@@ -70,7 +70,7 @@ const officier = [
         image : "assets/img/roster/dov.jpg",
         race : "Dracthyr",
         classe : "Evoker",
-        role : "Healer/DPS",
+        role : "Healer/ DPS",
         rio : "3141",
         voti : "8/8HM",
         atsc : "9/9HM",
@@ -99,7 +99,7 @@ const roster = [
         image : "assets/img/roster/rodg.jpg",
         race : "Night Elf",
         classe : "DH",
-        role : "Tank/DPS",
+        role : "Tank/ DPS",
         rio : "3417",
         voti : "2/8MM",
         atsc : "9/9HM",
@@ -112,7 +112,7 @@ const roster = [
         image : "assets/img/roster/hells.jpg",
         race : "Night Elf",
         classe : "DH",
-        role : "Tank/DPS",
+        role : "Tank/ DPS",
         rio : "3528",
         voti : "0/8MM",
         atsc : "9/9NM",
@@ -185,19 +185,19 @@ const roster = [
         color : drood,
         link : "https://raider.io/characters/eu/hyjal/Ex%C3%AEna"
     },
-    /*{
-        name : "Exîna",
-        image : "assets/img/roster/exina.jpg",
-        race : "Troll",
+    {
+        name : "Nouchie",
+        image : "assets/img/roster/nouchie.jpg",
+        race : "Night Elf",
         classe : "Druide",
-        role : "DPS",
-        rio : "3300",
-        voti : "6/8HM",
-        atsc : "9/9HM",
-        atdh : "5/9MM",
+        role : "Healer",
+        rio : "1781",
+        voti : "0/8MM",
+        atsc : "0/9MM",
+        atdh : "0/9MM",
         color : drood,
-        link : "https://raider.io/characters/eu/hyjal/Ex%C3%AEna"
-    },*/
+        link : "https://raider.io/characters/eu/hyjal/Nouchie"
+    },
     {
         name : "Mañìa",
         image : "assets/img/roster/mania.jpg",
@@ -294,7 +294,7 @@ const roster = [
         image : "assets/img/roster/happy.jpg",
         race : "Nain",
         classe : "Prêtre",
-        role : "Healer/DPS",
+        role : "Healer/ DPS",
         rio : "2952",
         voti : "0/8MM",
         atsc : "9/9NM",
@@ -320,11 +320,12 @@ const roster = [
         image : "assets/img/roster/dov.jpg",
         race : "Dracthyr",
         classe : "Evoker",
-        role : "Healer/DPS",
+        role : "Healer/ DPS",
         rio : "3141",
         voti : "8/8HM",
         atsc : "9/9HM",
         atdh : "4/9MM",
+        color : evok,
         link : "https://raider.io/characters/eu/hyjal/D%C3%B8v"
     }
 ]
@@ -360,6 +361,7 @@ function createCard(array, section) {
         raceDiv.classList.add("divInfo");
         let race = document.createElement("p");
         let raceName = document.createElement("p");
+        raceName.classList.add("titre");
         raceName.innerText= "Race";
         race.innerText = element.race;
         info.appendChild(raceDiv);
@@ -370,6 +372,7 @@ function createCard(array, section) {
         classeDiv.classList.add("divInfo");
         let classe = document.createElement("p");
         let classeName = document.createElement("p");
+        classe.classList.add("titre");
         classe.innerText = `Classe`;
         classeName.innerText = element.classe;
         info.appendChild(classeDiv);
@@ -381,6 +384,7 @@ function createCard(array, section) {
         let role = document.createElement("p");
         let roleName = document.createElement("p");
         role.innerText = `Rôle`;
+        role.classList.add("titre");
         roleName.innerText = element.role;
         info.appendChild(roleDiv);
         roleDiv.appendChild(role);
@@ -390,6 +394,7 @@ function createCard(array, section) {
         scoreDiv.classList.add("score");
         let score = document.createElement("p")
         score.innerText ="Score RIO";
+        score.classList.add("titre");
         let scoreElement = document.createElement("p")
         scoreElement.innerText = element.rio;
         stat.appendChild(scoreDiv);
@@ -401,6 +406,7 @@ function createCard(array, section) {
         stat.appendChild(raid);
         let exp = document.createElement("p");
         exp.innerText = "Expérience en raid";
+        exp.classList.add("titre");
         raid.appendChild(exp);
         let raidDiv = document.createElement("div");
         raidDiv.classList.add("raidDiv")
@@ -410,6 +416,7 @@ function createCard(array, section) {
         raidDiv.appendChild(voti);
         let votiName = document.createElement("p");
         votiName.innerText = "VOTI";
+        votiName.classList.add("titre")
         let votiExp = document.createElement("p");
         votiExp.innerText = element.voti;
         voti.appendChild(votiName);
@@ -418,6 +425,7 @@ function createCard(array, section) {
         let atsc = document.createElement("div");
         raidDiv.appendChild(atsc);
         let atscName = document.createElement("p");
+        atscName.classList.add("titre");
         atscName.innerText = "ATSC";
         let atscExp = document.createElement("p");
         atscExp.innerText = element.atsc;
@@ -428,6 +436,7 @@ function createCard(array, section) {
         raidDiv.appendChild(atdh);
         let atdhName = document.createElement("p");
         atdhName.innerText = "ATDH";
+        atdhName.classList.add("titre");
         let atdhExp = document.createElement("p");
         atdhExp.innerText = element.atdh;
         atdh.appendChild(atdhName);
