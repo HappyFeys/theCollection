@@ -1,0 +1,110 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: #f0f0f0;
+  background-image: url("/assets/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-color: #0c0b0e;
+}
+
+header {
+  margin: 50px 20px;
+  width: 40%;
+  height: 25vh;
+}
+header #description {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header #description div {
+  display: flex;
+}
+header img {
+  width: 22px;
+}
+
+main {
+  width: 100%;
+}
+main .card {
+  width: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fff;
+  border: 2px solid #F7B600;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 50px;
+}
+main .card .personnage {
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-size: 175%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+main .card .stat {
+  background-color: #F7B600;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding: 10px;
+}
+main .card .stat .info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+main .card .stat .info .divInfo {
+  width: 33%;
+  text-align: center;
+}
+main .card .stat .score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+main .card .stat .raid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .card .stat .raid .raidDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+main .card .stat .raid .raidDiv p {
+  padding: 5px;
+}
+main #officier, main #roster {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main h2 {
+  margin-left: 100px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
