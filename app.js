@@ -448,3 +448,18 @@ function createCard(array, section) {
 createCard(officier,offiSection);
 createCard(roster,rosterSection);
 
+let personnage = document.querySelectorAll(".personnage")
+
+for (const iterator of personnage) {
+    iterator.addEventListener("click", ()=> {
+        console.log(iterator.innerText)
+        for (let element of officier.concat(roster)) {
+            if (iterator.innerText==element.name) {
+                window.open(element.link, '_blank');
+                break;
+            }
+        }
+    })
+}
+
+
