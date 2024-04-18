@@ -60,7 +60,7 @@ main .card {
   width: 200px;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #fff;
+  background-color: #F7B600;
   border: 2px solid #F7B600;
   border-radius: 20px;
   overflow: hidden;
@@ -79,7 +79,16 @@ main .card .personnage {
   background-size: 175%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+main .card .personnage .imgRole {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f0f0f0;
+  border-radius: 25px;
+  filter: saturate(150%);
 }
 main .card .stat {
   background-color: #F7B600;
@@ -87,6 +96,8 @@ main .card .stat {
   flex-direction: column;
   font-size: 14px;
   padding: 10px;
+  border: 1px solid #333;
+  border-radius: 0 0 20px 20px;
 }
 main .card .stat .info {
   display: flex;
@@ -96,7 +107,7 @@ main .card .stat .info {
   padding: 5px;
 }
 main .card .stat .info .divInfo {
-  width: 33%;
+  width: 50%;
   text-align: center;
 }
 main .card .stat .score {

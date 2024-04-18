@@ -12,13 +12,17 @@ const mage = "#68CCEF";
 const pala = "#F48EBA";
 const war = "#C69B6D";
 
+const tank = "assets/img/tank.png";
+const heal = "assets/img/healer.png";
+const dps = "assets/img/dps.png";
+
 const officier = [
     {
         name : "Yønselpiki",
         image : "assets/img/roster/yonselpiki.jpg",
         race : "Vulperin",
         classe : "Moine",
-        role : "Healer",
+        role : heal,
         rio : "3460",
         voti : "5/8HM",
         atsc : "8/9HM",
@@ -31,7 +35,7 @@ const officier = [
         image : "assets/img/roster/roomro.jpg",
         race : "Troll Zandalari",
         classe : "Chasseur",
-        role : "DPS",
+        role : dps,
         rio : "2283",
         voti : "2/8MM",
         atsc : "9/9HM",
@@ -44,7 +48,7 @@ const officier = [
         image : "assets/img/roster/boobi.jpg",
         race : "Dracthyr",
         classe : "Evoker",
-        role : "Healer",
+        role : dps,
         rio : "3269",
         voti : "2/8MM",
         atsc : "9/9HM",
@@ -57,7 +61,7 @@ const officier = [
         image : "assets/img/roster/fun.jpg",
         race : "Night Elf",
         classe : "Prêtre",
-        role : "DPS",
+        role : dps,
         rio : "2806",
         voti : "8/8HM",
         atsc : "9/9HM",
@@ -70,7 +74,7 @@ const officier = [
         image : "assets/img/roster/dov.jpg",
         race : "Dracthyr",
         classe : "Evoker",
-        role : "Healer/ DPS",
+        role : dps,
         rio : "3141",
         voti : "8/8HM",
         atsc : "9/9HM",
@@ -86,7 +90,7 @@ const roster = [
         image : "assets/img/roster/tintin.jpg",
         race : "Blood Elf",
         classe : "DK",
-        role : "DPS",
+        role : dps,
         rio : "3037",
         voti : "3/8MM",
         atsc : "3/9MM",
@@ -99,7 +103,7 @@ const roster = [
         image : "assets/img/roster/rodg.jpg",
         race : "Night Elf",
         classe : "DH",
-        role : "Tank/ DPS",
+        role : tank,
         rio : "3417",
         voti : "2/8MM",
         atsc : "9/9HM",
@@ -112,7 +116,7 @@ const roster = [
         image : "assets/img/roster/hells.jpg",
         race : "Night Elf",
         classe : "DH",
-        role : "Tank/ DPS",
+        role : dps,
         rio : "3528",
         voti : "0/8MM",
         atsc : "9/9NM",
@@ -125,7 +129,7 @@ const roster = [
         image : "assets/img/roster/tei.jpg",
         race : "Orc",
         classe : "Guerrier",
-        role : "DPS",
+        role : dps,
         rio : "2834",
         voti : "0/8MM",
         atsc : "0/9MM",
@@ -138,7 +142,7 @@ const roster = [
         image : "assets/img/roster/luinil.jpg",
         race : "Blood Elf",
         classe : "Moine",
-        role : "Healer",
+        role : heal,
         rio : "2944",
         voti : "0/8MM",
         atsc : "0/9MM",
@@ -151,7 +155,7 @@ const roster = [
         image : "assets/img/roster/elio.jpg",
         race : "Orc",
         classe : "Moine",
-        role : "DPS",
+        role : dps,
         rio : "3053",
         voti : "6/8HM",
         atsc : "9/9HM",
@@ -164,7 +168,7 @@ const roster = [
         image : "assets/img/roster/root.jpg",
         race : "Kul Tiran",
         classe : "Druide",
-        role : "Tank",
+        role :tank,
         rio : "613",
         voti : "0/8MM",
         atsc : "9/9NM",
@@ -177,7 +181,7 @@ const roster = [
         image : "assets/img/roster/exina.jpg",
         race : "Troll",
         classe : "Druide",
-        role : "DPS",
+        role : dps,
         rio : "3300",
         voti : "6/8HM",
         atsc : "9/9HM",
@@ -190,7 +194,7 @@ const roster = [
         image : "assets/img/roster/nouchie.jpg",
         race : "Night Elf",
         classe : "Druide",
-        role : "Healer",
+        role : heal,
         rio : "1781",
         voti : "0/8MM",
         atsc : "0/9MM",
@@ -203,7 +207,7 @@ const roster = [
         image : "assets/img/roster/mania.jpg",
         race : "Blood Elf",
         classe : "Paladin",
-        role : "Tank",
+        role : tank,
         rio : "3020",
         voti : "8/8HM",
         atsc : "6/9MM",
@@ -216,7 +220,7 @@ const roster = [
         image : "assets/img/roster/tomty.jpg",
         race : "Tauren",
         classe : "Paladin",
-        role : "Healer",
+        role : heal,
         rio : "2836",
         voti : "2/8MM",
         atsc : "0/9MM",
@@ -229,7 +233,7 @@ const roster = [
         image : "assets/img/roster/chtitou.jpg",
         race : "Vulperin",
         classe : "Chasseur",
-        role : "DPS",
+        role : dps,
         rio : "2842",
         voti : "0/8MM",
         atsc : "0/9MM",
@@ -242,7 +246,7 @@ const roster = [
         image : "assets/img/roster/myaou.jpg",
         race : "Night Elf",
         classe : "Chasseur",
-        role : "DPS",
+        role : dps,
         rio : "1274",
         voti : "0/8MM",
         atsc : "0/9MM",
@@ -255,7 +259,7 @@ const roster = [
         image : "assets/img/roster/roomro.jpg",
         race : "Troll Zandalari",
         classe : "Chasseur",
-        role : "DPS",
+        role : dps,
         rio : "2283",
         voti : "2/8MM",
         atsc : "9/9HM",
@@ -268,7 +272,7 @@ const roster = [
         image : "assets/img/roster/bobbi.jpg",
         race : "Humain",
         classe : "Mage",
-        role : "DPS",
+        role : dps,
         rio : "0",
         voti : "0/8MM",
         atsc : "7/9HM",
@@ -281,7 +285,7 @@ const roster = [
         image : "assets/img/roster/disk.jpg",
         race : "Blood Elf",
         classe : "Démoniste",
-        role : "DPS",
+        role : dps,
         rio : "3203",
         voti : "5/8MM",
         atsc : "7/9MM",
@@ -294,7 +298,7 @@ const roster = [
         image : "assets/img/roster/happy.jpg",
         race : "Nain",
         classe : "Prêtre",
-        role : "Healer/ DPS",
+        role : heal,
         rio : "2952",
         voti : "0/8MM",
         atsc : "9/9NM",
@@ -307,7 +311,7 @@ const roster = [
         image : "assets/img/roster/lyotox.jpg",
         race : "Gobelin",
         classe : "Prêtre",
-        role : "DPS",
+        role : dps,
         rio : "2693",
         voti : "3/8MM",
         atsc : "2/9MM",
@@ -320,7 +324,7 @@ const roster = [
         image : "assets/img/roster/dov.jpg",
         race : "Dracthyr",
         classe : "Evoker",
-        role : "Healer/ DPS",
+        role :dps,
         rio : "3141",
         voti : "8/8HM",
         atsc : "9/9HM",
@@ -379,16 +383,13 @@ function createCard(array, section) {
         classeDiv.appendChild(classe);
         classeDiv.appendChild(classeName);
         //Création de la zone role
-        let roleDiv = document.createElement("div");
-        roleDiv.classList.add("divInfo");
-        let role = document.createElement("p");
-        let roleName = document.createElement("p");
-        role.innerText = `Rôle`;
-        role.classList.add("titre");
-        roleName.innerText = element.role;
-        info.appendChild(roleDiv);
-        roleDiv.appendChild(role);
-        roleDiv.appendChild(roleName);
+        
+        let roleName = document.createElement("img");
+        roleName.classList.add("imgRole")
+        
+        roleName.src = element.role;
+        
+        personnage.appendChild(roleName);
         //Création de la zone score
         let scoreDiv = document.createElement("div");
         scoreDiv.classList.add("score");

@@ -59,7 +59,7 @@ main{
     .card{
         width: 200px;
         height: fit-content;
-        background-color: #fff;
+        background-color: #F7B600;
         border: 2px solid #F7B600;
         border-radius: 20px;
         overflow: hidden;
@@ -77,7 +77,16 @@ main{
             background-size: 175%;
             overflow: hidden;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            padding-top: 10px;
+            .imgRole{
+                margin-top: 5px;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #f0f0f0;
+                border-radius: 25px;
+                filter: saturate(150%);
+            }
         }
         .stat{
             background-color: #F7B600;
@@ -85,6 +94,9 @@ main{
             flex-direction: column;
             font-size: 14px;
             padding: 10px;
+            border: 1px solid #333;
+            border-radius: 0 0 20px 20px;
+            
             .info{
                 display: flex;
                 justify-content: space-around;
@@ -92,7 +104,7 @@ main{
                 border-bottom: 1px solid #333;
                 padding: 5px;
                 .divInfo{
-                    width: 33%;
+                    width: 50%;
                     text-align: center;
                 }
             }
