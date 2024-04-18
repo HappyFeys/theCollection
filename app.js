@@ -446,4 +446,5 @@ function createCard(array, section) {
 }
 
 createCard(officier,offiSection);
-createCard(roster,rosterSection)
+createCard(roster,rosterSection);
+
