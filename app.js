@@ -478,6 +478,13 @@ function createCard(array, section) {
         atdhExp.innerText = element.atdh;
         atdh.appendChild(atdhName);
         atdh.appendChild(atdhExp);
+        //Création du bouton delete
+        let btnDelete = document.createElement("button");
+        let btnImg = document.createElement("img");
+        btnImg.src = "assets/img/delete-cross.svg";
+        btnDelete.appendChild(btnImg);
+        btnDelete.classList.add("btnDelete");
+        stat.appendChild(btnDelete);
     }
 }
 
@@ -547,4 +554,14 @@ btnCroissantRoster.addEventListener("click", ()=>{
 })
 
 
+function deleteCard(array) {
+    const btnDeleted = document.querySelectorAll(".btnDelete")
+    btnDeleted.forEach(btn => {
+        btn.addEventListener("click", () =>{
+            btn.parentNode.parentNode.remove()
+        })
+    })
+    return array
+}
 
+deleteCard(officier.concat(roster))

@@ -58,7 +58,7 @@ main{
         margin: 20px 30px;
         padding: 10px;
         cursor: pointer;
-        background-color: #f7b500;
+        background-color: crimson;
         color: #f0f0f0;
         font-weight: 900;
         border-radius: 20px;
@@ -76,7 +76,12 @@ main{
         margin: 50px;
         color:#333;
         font-weight: 600;
-
+        .btnDelete{
+            img{
+                width: 20px;
+                height: auto;
+            }
+        }
         .titre{
             font-weight: 900;
             color: #f0f0f0;

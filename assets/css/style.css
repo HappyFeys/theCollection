@@ -60,7 +60,7 @@ main button {
   margin: 20px 30px;
   padding: 10px;
   cursor: pointer;
-  background-color: #f7b500;
+  background-color: crimson;
   color: #f0f0f0;
   font-weight: 900;
   border-radius: 20px;
@@ -77,6 +77,10 @@ main .card {
   margin: 50px;
   color: #333;
   font-weight: 600;
+}
+main .card .btnDelete img {
+  width: 20px;
+  height: auto;
 }
 main .card .titre {
   font-weight: 900;
