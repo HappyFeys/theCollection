@@ -56,6 +56,16 @@ header img {
 main {
   width: 100%;
 }
+main button {
+  margin: 20px 30px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f7b500;
+  color: #f0f0f0;
+  font-weight: 900;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+}
 main .card {
   width: 200px;
   height: -moz-fit-content;
